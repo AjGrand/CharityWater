@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charity: water — Drop Collector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top-brand">charity: water</div>
+  <div id="ui">
+    <span id="score-display">💧 Drops: 0</span>
+    <span id="lives-display">Lives: ❤️❤️❤️</span>
+    <span id="level-display">Mission: 1</span>
+    <span id="speed-display">Speed: 1.0x</span>
+    <span id="event-display">Status: Ready</span>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <div id="touch-controls" aria-label="Touch controls">
+    <button id="btn-left" class="touch-btn" aria-label="Move left">◀</button>
+    <button id="btn-jump" class="touch-btn touch-btn-jump" aria-label="Jump">⤒</button>
+    <button id="btn-right" class="touch-btn" aria-label="Move right">▶</button>
+  </div>
+  <div id="overlay" class="hidden">
+    <div id="overlay-box">
+      <div id="cw-logo">charity: water</div>
+      <h1 id="overlay-title">Drop Collector</h1>
+      <p id="overlay-message">Every drop counts. Collect clean water for the people who need it most.</p>
+      <p id="overlay-controls">← → to move &nbsp;|&nbsp; Space / ↑ to jump &nbsp;|&nbsp; Touch buttons on mobile</p>
+      <button id="overlay-btn">Start Mission</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
